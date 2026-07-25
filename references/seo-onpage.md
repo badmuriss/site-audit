@@ -26,7 +26,12 @@ phrase, label it Estimated, and proceed — do not stall.
 ## 2. Meta description
 
 - Present and unique.
-- Length ~150-160 chars.
+- Under 70 chars: **fail**, P1. The snippet is mostly wasted, and it usually signals
+  auto-generated or forgotten copy.
+- 70-150 chars: **partial-risk**. Works and renders whole in the SERP, but doesn't use the
+  space available.
+- 150-160 chars: **pass**, the target length.
+- Over ~160 chars: truncates in the SERP, **partial-risk**.
 - Contains the keyword naturally + a call to action.
 - Accurately promises what the page delivers (mismatched = pogo-sticking).
 - Missing description is P1: Google auto-generates a worse one.
