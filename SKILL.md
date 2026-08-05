@@ -10,6 +10,12 @@ license: MIT
 One workflow, three phases, one report. Audits a **live** site or app — you need a
 reachable URL or a running local server. If you have neither, stop and ask for one.
 
+This skill only verifies. Building or restyling the site is the
+[incredibly-pretty-websites](https://github.com/badmuriss/incredibly-pretty-websites) skill's
+job (`npx skills add badmuriss/incredibly-pretty-websites`), and it owns every design decision
+this audit does not measure. On a redesign, run this audit **before** the work starts too: that
+report is the baseline the redesign has to protect, and the after-run is the proof.
+
 Run the phases **in order**. Each phase says "read its reference now" — read it, do the
 work, capture evidence, then move on. Do not skip ahead. The consolidated report at the
 end ranks every finding by severity with reproduction steps and a suspected location.
