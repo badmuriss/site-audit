@@ -74,6 +74,12 @@ action, open a modal/detail pane, read the console, screenshot before and after,
 the expected post-action state. Run axe-core per page, sweep responsive widths, and log
 every interaction with a timestamp and selector. No interaction log = verdict Incomplete.
 
+If the project does not match the defaults, meaning you cannot find the URL, cannot log in
+headless, need seed data, or the repo uses its own path convention for reports and evidence,
+**read `references/project-adaptation.md`**. It resolves URL discovery, test-auth and seed
+scripts per stack (Next/Auth.js, Rails, Django, Laravel, WordPress, Prisma, Drizzle, raw SQL)
+and gives the path fallback chain. Skip it when the defaults already work.
+
 ## Phase 2 — On-page SEO + AI visibility
 
 **Read `references/seo-onpage.md` now.** For each significant page, check the on-page

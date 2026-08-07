@@ -51,6 +51,18 @@ One workflow, three phases in order, one consolidated report at the end. Each ph
 | 2 | **AI visibility (AEO/GEO)** | [`aeo-geo.md`](references/aeo-geo.md) | The same HTML through a second lens: fetch classification, bot-vs-user parity, raw-vs-rendered parity, AI-crawler directives, schema-to-visible-content parity, extractability, claim integrity, trust signals, thin-template detection. |
 | 3 | **Performance budget** | [`perf-budget.md`](references/perf-budget.md) | Measures Core Web Vitals on the most representative route, then works the top-culprits checklist: render-blocking resources, unoptimized images, font loading, JS weight. Every breach gets diagnosed to a suspected source. |
 
+### Deep dives, read on demand
+
+Five references the phases pull in only when the situation calls for them. Nothing here loads by default, so a straightforward audit stays cheap.
+
+| Reference | Read it when |
+|---|---|
+| [`stress-test-recipes.md`](references/stress-test-recipes.md) | A row in the Phase 1 stress table fires and you need the actual recipe: steps, what to watch, what counts as a failure |
+| [`data-seasoning.md`](references/data-seasoning.md) | The app stores or renders user text. Full real-flavour battery: accents, apostrophes, RTL, emoji, zero-width, XSS canary, oversized files |
+| [`multi-pane-stress.md`](references/multi-pane-stress.md) | More than one pane, tab or live region shares the screen. Cross-pane sync bugs never surface in a single-pane walkthrough |
+| [`perfection-checklist.md`](references/perfection-checklist.md) | Layout holds at every width and you want the per-component pass on states, spacing, focus, loading and empty variants |
+| [`project-adaptation.md`](references/project-adaptation.md) | The defaults do not fit: you cannot find the URL, cannot log in headless, need seed data, or the repo has its own path convention. Covers Next/Auth.js, Rails, Django, Laravel, WordPress, Prisma, Drizzle, raw SQL |
+
 ### Bring whatever browser tooling you have
 
 Agent-neutral by design. Any tier is valid, and the skill tells you what the tier costs you:

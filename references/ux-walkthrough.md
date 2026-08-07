@@ -89,6 +89,11 @@ content and run layout-detection JS for overflow, clipping, and vertical-text st
 
 Any collapse, overflow, or invisible text is a hard-gate High.
 
+Layout holding at every width is the floor, not the finish. Once the sweep is clean, read
+[perfection-checklist.md](perfection-checklist.md) and run it over the components that carry
+the product: the per-component pass on states, spacing, focus, loading and empty variants that
+separates "nothing is broken" from "this looks shipped".
+
 ## 7. Automated accessibility (axe-core, mandatory per page)
 
 Manual keyboard walks catch focus traps; they miss ~80% of structural a11y bugs. axe-core
@@ -128,6 +133,15 @@ Run the ones that fit the app. Each catches a class of bug dev-clean data hides:
 | Race (double-click, fast-type-then-blur, slow network) | Optimistic-UI + debounce bugs |
 | Reduced motion / high-contrast / print | Ignored media queries |
 | Real-flavour data (apostrophes, accents, RTL, emoji, XSS canary, 50MB PDF, .heic) | Silent truncation, validation that strips input, unescaped injection |
+
+The table is the checklist. When a row fires, or when the app is complex enough that the
+one-liner is not enough, read the deep dive for that row:
+
+| Deep dive | Read it when |
+|---|---|
+| [stress-test-recipes.md](stress-test-recipes.md) | You need the actual recipe for a row above: exact steps, what to watch, what counts as a failure |
+| [data-seasoning.md](data-seasoning.md) | The app stores or renders user text. Full real-flavour battery: accents, apostrophes, RTL, emoji, zero-width, XSS canary, oversized files |
+| [multi-pane-stress.md](multi-pane-stress.md) | The app has more than one pane, tab, or live region on screen at once. Cross-pane sync bugs never show up in a single-pane walkthrough |
 
 ## Notes
 
