@@ -1,7 +1,6 @@
 ---
 name: site-audit
-description: |
-  Audit a RUNNING website or web app end to end: UX walkthrough, on-page SEO + AI visibility (AEO/GEO), and Core Web Vitals performance, in one consolidated severity-ranked report. Needs a live URL or a local dev server (e.g. http://localhost:5173) — this is not a static code review. Interaction-first: an audit that never typed, clicked, or navigated ends with verdict "Incomplete". Hard gates: console errors/warnings = 0, network 5xx = 0, layout collapse = 0, axe-core Critical/Serious = 0, perf budget green (LCP <= 2.5s, CLS <= 0.1, INP <= 200ms). Agent-neutral — works with Claude Code, Codex, or any host using whatever browser tooling is available: Chrome DevTools MCP, Playwright MCP, or plain curl + lighthouse CLI as fallback. Trigger with "audit the site", "site audit", "qa sweep", "seo check", "lighthouse", "check performance", "is the site ready to ship", "walkthrough", "find what's broken", "aeo audit", "geo audit", "ai visibility", "will chatgpt cite my site", "llm seo".
+description: "End-to-end audit of a RUNNING site: UX walkthrough, SEO/AEO/GEO and Core Web Vitals in one severity-ranked report. use_when: a live URL or dev server exists and the ask is \"audit the site\", \"seo check\", \"is it ready to ship\". do_not_use_when: static code review without a running app."
 license: MIT
 ---
 
