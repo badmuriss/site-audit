@@ -49,6 +49,7 @@ The audit ends in exactly one:
 | Console warnings during walkthrough | > 0 | High |
 | Network 5xx | > 0 | Critical |
 | Network 403/404 on authenticated pages | > 0 | High |
+| Landing nav duplicates one account-entry intent or its primary action wraps/determines header height | > 0 | High |
 | Layout collapse at any tested viewport | > 0 | High |
 | axe-core Critical violations on any page | > 0 | Critical |
 | axe-core Serious violations on any page | > 0 | High |
